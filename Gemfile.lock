@@ -8,7 +8,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    coderay (1.1.0)
+    domain_name (0.5.25)
+      unf (>= 0.0.5, < 1.0.0)
     dotenv (2.0.2)
     eventmachine (1.0.8)
     faraday (0.9.2)
@@ -29,21 +30,42 @@ GEM
       launchy (~> 2.4)
     gli (2.13.4)
     hashie (3.4.3)
+    http (0.9.8)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 1.0.1)
+      http_parser.rb (~> 0.6.0)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
+    http-form_data (1.0.1)
+    http_parser.rb (0.6.0)
     i18n (0.7.0)
+    imgur2 (1.2.1)
     json (1.8.3)
     launchy (2.4.3)
       addressable (~> 2.3)
-    method_source (0.8.2)
+    mechanize (2.7.3)
+      domain_name (~> 0.5, >= 0.5.1)
+      http-cookie (~> 1.0)
+      mime-types (~> 2.0)
+      net-http-digest_auth (~> 1.1, >= 1.1.1)
+      net-http-persistent (~> 2.5, >= 2.5.2)
+      nokogiri (~> 1.4)
+      ntlm-http (~> 0.1, >= 0.1.1)
+      webrobots (>= 0.0.9, < 0.2)
+    mime-types (2.6.2)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multipart-post (2.0.0)
+    net-http-digest_auth (1.4)
+    net-http-persistent (2.9.4)
     nokogiri (1.6.7)
       mini_portile2 (~> 2.0.0.rc2)
+    ntlm-http (0.1.1)
     oj (2.14.0)
-    pry (0.10.1)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
+    phantomjs (1.9.8.0)
+    screencap (0.1.4)
+      phantomjs
     slack-ruby-bot (0.5.0)
       activesupport
       faye-websocket
@@ -56,10 +78,13 @@ GEM
       gli
       json
       websocket-driver
-    slop (3.6.0)
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.1)
+    webrobots (0.1.1)
     websocket-driver (0.6.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -71,7 +96,10 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  pry
+  http
+  imgur2
+  mechanize
+  screencap
   slack-ruby-bot
   wolfram
 
