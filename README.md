@@ -2,6 +2,13 @@ RubyBot -- a JWo Presentation
 =================
 
 
+Slides available at [https://speakerdeck.com/jwo/slackbot-dot-rb-create-you-a-slack-bot](SpeakerDeck)
+
+<a href="https://speakerdeck.com/jwo/slackbot-dot-rb-create-you-a-slack-bot">
+![img](slides.jpg)
+</a>
+
+
 ## Tech Used
 
 ```
